@@ -1,0 +1,21 @@
+{
+    "name": "@repo/db",
+    "version": "0.0.0",
+    "type": "module",
+    "private": true,
+    "scripts": {
+        "lint": "eslint . --max-warnings 0"
+    },
+    "dependencies": {
+        "@supabase/supabase-js": "^2.49.4"
+    },
+    "devDependencies": {
+        "@repo/eslint-config": "workspace:*",
+        "@repo/typescript-config": "workspace:*",
+        "typescript": "^5.7.3"
+    },
+    "exports": {
+        "./client": "./src/client.ts",
+        "./database.types": "./src/database.types.ts"
+    }
+}
